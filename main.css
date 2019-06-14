@@ -30,17 +30,20 @@ section, div, footer, .first-modal, .second-modal{
 }
 
 .first-modal{
-    padding: 20px;
     background: #e5e5e5;
+    width: 100%;
     min-width: 480px;
     text-align: left;
     font-size: 14px;
+    position: fixed;
+    z-index: 1;
+    transition: 1s;
+    padding: 20px;
 }
 
 .modal-content{
     margin: auto;
-    max-width: 700px;
-    min-height: 40px;
+    max-width: 720px;
 }
 
 .modal-button{
@@ -88,6 +91,7 @@ section, div, footer, .first-modal, .second-modal{
 }
 
 .hero-content{
+    margin-top: 30px;
     padding: 50px 0;
     position: relative;
     color: #ffffff;
@@ -99,6 +103,7 @@ section, div, footer, .first-modal, .second-modal{
 }
 
 .image-logo{
+    margin-top: 70px;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -150,9 +155,14 @@ ul > li{
     list-style: none;
 }
 
+.cards-wrapper{
+    display: inline-block;
+}
+
 .block-cards{
     display: inline-block;
-    padding: 0 50px;
+    margin: 0;
+    /* padding: 0 50px; */
 }
 
 .cards{
@@ -181,7 +191,7 @@ ul > li{
 }
 
 .second-modal{
-    max-width: 550px;
+    max-width: 640px;
     min-width: 480px;
     background: rgba(0, 123, 193, 0.9);
     color: #ffffff;
@@ -203,11 +213,11 @@ ul > li{
 }
 
 .modal-subs{
-    padding: 20px;
+    padding: 30px;
 }
 
 .modal-subs > p{
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 0;
 }
 
@@ -265,6 +275,11 @@ ul > li{
     float: right;
 }
 
+@media only screen and (max-width: 1280px) {
+    .block-cards{
+        display: block;
+    }
+}
 @media only screen and (max-width: 960px) {
     .block-cards{
         padding: 0 40px;
@@ -272,10 +287,17 @@ ul > li{
 }
 @media only screen and (max-width: 720px) {
     .modal-text{
-        width: 100%;
+        width: 90%;
+        padding-right: 10%;
     }
+    .modal-button{
+        margin-top: 10px;
+    }    
 }
 @media only screen and (max-width: 540px) {
+    .block-cards{
+        display: inline-block;
+    }
     .block-cards, .sub-text{
         padding: 0 30px;
     }
