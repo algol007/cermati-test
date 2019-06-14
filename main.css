@@ -1,0 +1,309 @@
+/* 
+Color Reference :
+
+Blue: #007bc1
+Dark blue: ​ #004a75
+Orange: ​ #ff8000
+Dark orange: #cc6600
+Smoke Grey: #e5e5e5 
+
+*/
+
+html, body, h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    line-height: 1.5;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section, div, footer, .first-modal, .second-modal{
+    display: block;
+}
+
+#hero, #main-content, .footer{
+    padding: 50px 0;
+}
+
+.first-modal{
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    background: #e5e5e5;
+    width: 100%;
+    height: 40px;
+}
+
+.modal-content{
+    margin: auto;
+    width: 50%;
+}
+
+.modal-content > li{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.modal-button{
+    background: #007bc1;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    padding: 8px 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.modal-button:hover{
+    background: #004a75;
+    transition: 1s;
+}
+
+.modal-text{
+    text-align: left;
+    font-size: 14px;
+    width: 80%;
+}
+
+.text-blue{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#hero{
+    width: 100%;
+    height: 500px;
+    background: url(./img/work-desk__dustin-lee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-overlay{
+    background: rgba(0, 74, 117, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-content{
+    padding: 50px 0;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content > h2{
+    padding: 10px;
+}
+
+.image-logo{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+.hero-content > p {
+    margin: 0;
+    padding: 3px;
+}
+
+.title-text{
+    font-weight: 300;
+}
+
+.button{
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1.5px solid #ffffff;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    outline: none;
+}
+
+.button:hover{
+    background-color: #ffffff;
+    color: #004a75;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#main-content{
+    text-align: center;
+    background-color: #e5e5e5; 
+    width: 100%;    
+}
+
+.main-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.block-cards{
+    display: flex;
+    padding: 0 50px;
+}
+
+.sub-title-icon{
+    display: inline-block;
+}
+
+.cards{
+    padding: 20px;
+    font-size: 13px;
+    width: 350px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #bbbbbb;
+}
+
+.cards-title{
+    font-size: 20px;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cards-title > li {
+    list-style: none;
+}
+
+.icon{
+    font-size: 24px;
+    color: #aaaaaa;
+}
+
+.cards > p{
+    text-align: left;
+}
+
+.second-modal{
+    width: 550px;
+    height: 200px;
+    background: rgba(0, 123, 193, 0.9);
+    color: #ffffff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.modal-subs{
+    padding: 20px;
+}
+
+.modal-title{
+    margin-top: 10px;
+}
+
+.second-modal > button{
+    color: #ffffff;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+.modal-subs > p{
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.close-button{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.modal-input{
+    padding-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.button-input{
+    color: #ffffff;
+    background: #FF9800;
+    border: none;
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline;
+    outline: none;
+}
+
+.button-input:hover{
+    background: #FFC107;
+    color: #333333;
+    transition: 1s;
+}
+
+.email-input{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 2px;
+    width: 75%;
+    box-sizing: border-box;
+    outline: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer{
+    background-color: #004a75;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+}
+    float: right;
+
+@media only screen and (max-width: 960px) {
+    .block-cards{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .block-cards{
+        display: block;
+    }
+    .first-modal{
+        height: auto;
+    }
+    .second-modal{
+        width: auto;
+    }
+    .modal-content > li {
+        float: left;
+    }
+}
