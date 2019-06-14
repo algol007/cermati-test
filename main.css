@@ -151,6 +151,14 @@ section, div, footer, .first-modal, .second-modal{
     margin-bottom: 10px;
 }
 
+.content-text{
+    padding: 0 20px 20px 20px;
+    max-width: 570px;
+    margin: auto;
+
+}
+
+
 ul > li{
     list-style: none;
 }
@@ -162,7 +170,7 @@ ul > li{
 .block-cards{
     display: inline-block;
     margin: 0;
-    /* padding: 0 50px; */
+    padding: 0 20px;
 }
 
 .cards{
@@ -282,7 +290,7 @@ ul > li{
 }
 @media only screen and (max-width: 960px) {
     .block-cards{
-        padding: 0 40px;
+        padding: 0 30px;
     }
 }
 @media only screen and (max-width: 720px) {
@@ -298,7 +306,7 @@ ul > li{
     .block-cards{
         display: inline-block;
     }
-    .block-cards, .sub-text{
+    .sub-text{
         padding: 0 30px;
     }
     .modal-content{
